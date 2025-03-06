@@ -1,3 +1,5 @@
+from mcp.server.fastmcp import FastMCP, Context
+
 def register_assertion_tools(mcp: FastMCP):
     @mcp.tool()
     async def assert_element_exists(selector: str, ctx: Context) -> str:
