@@ -11,6 +11,9 @@ from tools.screenshots import register_screenshot_tools
 from tools.forms import register_form_tools
 from tools.network import register_network_tools
 from tools.accessibility import register_accessibility_tools
+from tools.test_definition import register_test_definition_tools
+from tools.test_persistence import register_persistence_tools
+from tools.nl_test_gen import register_nl_test_tools
 
 @asynccontextmanager
 async def app_lifespan(server: FastMCP) -> AsyncIterator[dict]:
@@ -34,6 +37,9 @@ register_screenshot_tools(mcp)
 register_form_tools(mcp)
 register_network_tools(mcp)
 register_accessibility_tools(mcp)
+register_test_definition_tools(mcp)
+register_persistence_tools(mcp)
+register_nl_test_tools(mcp)
 
 # Add lifespan after creating the server
 mcp.lifespan = app_lifespan
