@@ -4,6 +4,8 @@ from typing import AsyncIterator
 from server.browser_manager import browser_lifespan
 from tools.navigation import register_navigation_tools
 from tools.interaction import register_interaction_tools
+from tools.assertions import register_assertion_tools
+from tools.waits import register_wait_tools
 
 @asynccontextmanager
 async def app_lifespan(server: FastMCP) -> AsyncIterator[dict]:
@@ -20,6 +22,8 @@ mcp = FastMCP(
 # Register tool modules
 register_navigation_tools(mcp)
 register_interaction_tools(mcp)
+register_assertion_tools(mcp)
+register_wait_tools(mcp)
 
 # Add lifespan after creating the server
 mcp.lifespan = app_lifespan
