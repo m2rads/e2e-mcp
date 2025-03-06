@@ -1,0 +1,5 @@
+mcp>=1.2.0
+browser-use
+httpx>=0.24.1
+python-dotenv
+
