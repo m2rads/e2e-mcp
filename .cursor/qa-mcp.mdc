@@ -1,0 +1,11 @@
+---
+description: QA AgentMCP Server Instructionspy
+globs: server.py
+alwaysApply: false
+---
+This is an MCP Server built for performing E2E tests in the browser as a QA agent. The agent is built on top of Browser use for browser interactivity. 
+
+The following is the context of MCP, MCP Python SDK and Browser Use sdk for interacting with the browser: 
+
+[mcp-context.mdc](mdc:.cursor/mcp-context.mdc)
+[mcp-python-sdk.mdc](mdc:.cursor/mcp-python-sdk.mdc)
