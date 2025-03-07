@@ -2,6 +2,7 @@
 
 You can add this MCP to your Cursor or Windsurf AI IDE and improve your "Vibe Coding" workflow 
 
+Thanks to [Eric Zakariasson](https://github.com/ericzakariasson) - Inspired by [uber-eats-mcp-server](https://github.com/ericzakariasson/uber-eats-mcp-server/blob/main/README.md)
 
 ## What is MCP? 
 
