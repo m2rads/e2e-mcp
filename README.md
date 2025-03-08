@@ -2,8 +2,6 @@
 
 You can add this MCP to your Cursor or Windsurf AI IDE and improve your "Vibe Coding" workflow 
 
-Thanks to [Eric Zakariasson](https://github.com/ericzakariasson) - Inspired by [uber-eats-mcp-server](https://github.com/ericzakariasson/uber-eats-mcp-server/blob/main/README.md)
-
 ## What is MCP? 
 
 The Model Context Protocol (MCP) is an open protocol that connects your AI agent to the source of your system or data reducing the friction between context and the AI.
