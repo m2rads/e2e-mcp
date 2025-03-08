@@ -1,0 +1,8 @@
+{
+    "mcpServers": {
+      "puppeteer": {
+        "command": "node",
+        "args": ["/Users/m2rads/Documents/projects/servers/src/puppeteer/dist/index.js"]
+      }
+    }
+  }
