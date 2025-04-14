@@ -1,0 +1,30 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    properties:
+      endtoend:
+        type: boolean
+        default: false
+        description: Flag to run the server in end-to-end mode with Playwright.
+      apiKey:
+        type: string
+        description: OpenAI API key required when running in end-to-end mode. Optional
+          if endtoend is false.
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({
+      command: 'node',
+      args: [
+        'cli.js',
+        ...(config.endtoend ? ['--endtoend'] : []),
+        ...(config.apiKey ? [`--api-key=${config.apiKey}`] : [])
+      ]
+    })
+  exampleConfig:
+    endtoend: false
+    apiKey: your-api-key-if-needed
