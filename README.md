@@ -4,6 +4,8 @@ https://github.com/user-attachments/assets/b801f239-dc66-4b3b-bcf2-42e2a9a68721
 
 A Model Context Protocol (MCP) server powered by [Playwright](https://playwright.dev) that provides automated end-to-end testing with dedicated LLM-driven test validation, separating testing concerns from the MCP client.
 
+
+my changes 
 Note: This MCP is forked from Microsoft's [Playwright MCP](https://github.com/microsoft/playwright-mcp). We optimized Playwright MCP for automated end to end testing.
 
 ### Key Features
